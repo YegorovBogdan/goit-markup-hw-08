@@ -1,0 +1,161 @@
+.footer {
+  background-color: $footer-bg-color;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 20px;
+
+  color: $other-color;
+}
+
+//адресc
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__text {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: $other-color;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  display: block;
+
+  color: $footer-link;
+  text-decoration: none;
+
+  @include transition1(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// Ссылки на соцсете в футере
+.social {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 93px;
+}
+
+.social__slogan {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: $other-color;
+}
+
+.social__link--color {
+  fill: $other-color;
+  background-color: $icon-bg-color;
+}
+
+//подписка на рассылку
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__slogan {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: $other-color;
+}
+
+.subscription__form {
+  display: flex;
+}
+
+.subscription__input {
+  margin-right: 12px;
+  padding: 15px 150px 15px 16px;
+  width: 358px;
+
+  color: $other-color;
+  background-color: transparent;
+
+  border: 1px solid $footer-border;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px $box-footer;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $footer-link;
+  }
+}
+
+.subscription__button {
+  position: relative;
+  padding: 10px 62px 10px 29px;
+  width: 200px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: $secondary-letter-spacing;
+
+  background-color: $accent-color;
+  color: $other-color;
+
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0px 4px 4px $box-footer;
+  border-radius: 4px;
+
+  @include transition2(background-color, box-shadow);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hero-button;
+    box-shadow: 0px 4px 4px $box-footer;
+  }
+}
+
+.subscription__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}

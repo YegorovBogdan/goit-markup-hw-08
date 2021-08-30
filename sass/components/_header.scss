@@ -1,0 +1,141 @@
+//шапка сайта
+
+.header {
+  border-bottom: 1px solid $page-header-border;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+//логотип
+.logo {
+  font-family: $secondary-font-family;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: $logo-color;
+}
+
+.logo__accent {
+  color: $accent-color;
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 93px;
+}
+
+//навигация
+.site-nav,
+.site-nav__list {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__list,
+.header__contact-link {
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+// .site-nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+.site-nav__link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  text-decoration: none;
+
+  @include transition1(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav__link--current {
+  position: relative;
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    height: 4px;
+    width: 100%;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+// .site-nav__link--current::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: -1px;
+
+//   height: 4px;
+//   width: 100%;
+
+//   background-color: $accent-color;
+//   border-radius: 2px;
+// }
+
+//контакты
+.header__contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__contact-link {
+  display: flex;
+  align-items: center;
+
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  @include transition1(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header__contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
