@@ -1,3 +1,9 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .work__list {
   display: flex;
   position: relative;
@@ -25,7 +31,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: $other-color;
