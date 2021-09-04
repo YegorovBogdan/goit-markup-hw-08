@@ -15,10 +15,10 @@ body {
 
   color: $primary-text-color;
   background-color: $other-color;
-}
 
-body.modal-open {
-  overflow: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {

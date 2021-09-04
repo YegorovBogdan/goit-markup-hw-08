@@ -1748,6 +1748,7 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.55;
+  letter-spacing: 0.03em;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition-property: color, -webkit-transform;
