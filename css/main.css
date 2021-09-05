@@ -75,7 +75,7 @@ img {
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
@@ -1609,6 +1609,7 @@ img {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
 
@@ -1616,17 +1617,6 @@ img {
   .card-list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: style;
-    padding: 0;
-    overflow: hidden;
   }
 }
 
@@ -1635,25 +1625,6 @@ img {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card-list__item {
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card-list__item {
-    width: 370px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-left: 15px;
-    margin-bottom: 30px;
-    overflow: hidden;
   }
 }
 
