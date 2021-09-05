@@ -2,17 +2,11 @@
 
 .filter {
   display: flex;
-  list-style: none;
-  padding: 0;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    flex-wrap: nowrap;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -20,17 +14,41 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .filter__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+//   display: flex;
+//   list-style: none;
+//   padding: 0;
+
+//   @media screen and (max-width: 767px) {
+//     flex-wrap: wrap;
+//     margin-bottom: 30px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     justify-content: center;
+//     flex-wrap: nowrap;
+//     margin-bottom: 30px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//   }
+// }
+
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .filter__item {
-    &:nth-child(-n + 3) {
-      margin-bottom: 15px;
-    }
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .filter__item {
+//     &:nth-child(-n + 3) {
+//       margin-bottom: 15px;
+//     }
+//   }
+// }
 
 .filter__button {
   display: inline-block;
@@ -82,8 +100,8 @@
 // oформление карточек
 
 .card-list__link {
-  display: flex;
-  justify-content: center;
+  display: block;
+
   height: 100%;
   text-decoration: none;
 

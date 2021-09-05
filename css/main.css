@@ -24,7 +24,7 @@ body.modal-open {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -955,10 +955,12 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .fotter__desktop {
+  .footer__desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -969,7 +971,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .fotter__desktop {
+  .footer__desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1112,28 +1114,24 @@ img {
 .subscription__input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1546,16 +1544,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .filter {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1563,8 +1554,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     margin-bottom: 30px;
   }
 }
@@ -1575,14 +1564,14 @@ img {
   }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 @media screen and (max-width: 767px) {
   .filter__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter__button {
@@ -1638,12 +1627,7 @@ img {
 }
 
 .card-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   height: 100%;
   text-decoration: none;
   -webkit-transition-property: -webkit-box-shadow;
