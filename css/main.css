@@ -1609,7 +1609,6 @@ img {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
 }
 
@@ -1623,6 +1622,16 @@ img {
 @media screen and (max-width: 767px) {
   .card-list__item {
     margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
